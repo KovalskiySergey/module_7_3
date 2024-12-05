@@ -22,7 +22,7 @@ class WordsFinder:
         word_acc = {}
         for file_name, words in self.get_all_words().items():
             if word.lower() in words:
-                position = words.index(word.lower()) + 1  # Позиция с 1
+                position = words.index(word.lower()) + 1  
                 word_acc[file_name] = position
         return word_acc
 
